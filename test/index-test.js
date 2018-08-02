@@ -33,6 +33,11 @@ describe('Fix the Scope', function() {
       expect(window.add2(n)).toEqual(n + 2)
     })
   })
+  
+    function add2(n) {
+   var two = 2
+    return n + two;
+  }
 
   describe('funkyFunction()', function() {
     it('returns a function', function() {
