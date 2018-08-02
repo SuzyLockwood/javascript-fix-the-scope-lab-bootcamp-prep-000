@@ -22,6 +22,11 @@ describe('Fix the Scope', function() {
     })
   })
 
+  function yourAnimal() {
+    var animal = 'cat';
+    return animal;
+  }
+
   describe('add2(n)', function() {
     it('adds two to n', function() {
       const n = Math.floor(Math.random() * 1000)
