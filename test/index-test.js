@@ -44,6 +44,12 @@ describe('Fix the Scope', function() {
       expect(typeof window.funkyFunction()).toEqual('function')
     })
   })
+  
+    var funkyFunction = function() {
+    return function(){
+      return "FUNKY!"
+    }
+}
 
   describe('theFunk', function() {
     it('is "FUNKY!"', function() {
